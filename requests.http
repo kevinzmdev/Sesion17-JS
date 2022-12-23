@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Lenin Zambrano",
+    "age": "27",
+    "email": "lezama_17@email.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/63a5c6cd8d9c22ff0ef05ab1  HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/63a5c8cb2840f9260af43c08 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "George L. J. Mendel",
+    "age": "81",
+    "email": "georgemendel_09@email.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/63a5cf38f2bfea0beeb6dc59  HTTP/1.1
